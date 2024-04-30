@@ -1,6 +1,6 @@
 -- 1. Write a SQL statement to create a table countries including columns country_id, country_name, and region_id, and make sure that the combination of columns country_id and region_id will be unique.
     create table countries (country_id varchar(10),country_name varchar(40),region_id varchar(20) NOT NULL,CONSTRAINT PRIMARY KEY(country_id,region_id),UNIQUE (country_id, region_id));
-
+    
 -- 2. Write a SQL statement to create a table named jobs including columns job_id, job_title, min_salary, and max_salary, and make sure that, the default value for job_title is blank and min_salary is 8000 and max_salary is NULL will be entered automatically at the time of insertion if no value assigned for the specified columns.
     create table jobs(job_id varchar(10) NOT NULL PRIMARY KEY,job_title varchar(35) NOT NULL DEFAULT "  ",min_salary decimal(6,0) DEFAULT 8000,max_salary decimal(6,0) DEFAULT NULL);
     

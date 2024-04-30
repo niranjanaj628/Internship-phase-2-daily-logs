@@ -1,6 +1,6 @@
 -- 1. Query the country table to select the Name, Continent, and Population.
     SELECT Name, Continent, Population FROM country;
-
+    
 -- 2. Use aliases to rename the Name column to Country Name and the country table as c in your queries
     SELECT Name AS 'Country Name' FROM country AS c;
 
