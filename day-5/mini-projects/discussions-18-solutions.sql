@@ -3,7 +3,7 @@
 
 -- 2. Write a SQL statement to create a table named jobs including columns job_id, job_title, min_salary, and max_salary, and make sure that, the default value for job_title is blank and min_salary is 8000 and max_salary is NULL will be entered automatically at the time of insertion if no value assigned for the specified columns.
     create table jobs(job_id varchar(10) NOT NULL PRIMARY KEY,job_title varchar(35) NOT NULL DEFAULT "  ",min_salary decimal(6,0) DEFAULT 8000,max_salary decimal(6,0) DEFAULT NULL);
-
+    
 -- 3. Write a SQL statement to create a table job_history including columns employee_id, start_date, end_date, job_id, and department_id and make sure that, the employee_id column does not contain any duplicate value at the time of insertion and the foreign key column job_id contain only those values which exist in the jobs table.
     create table job_history(employee_id int NOT NULL PRIMARY KEY,start_date date,end_date date,job_id varchar(10),department_id varchar(10),FOREIGN KEY(job_id) REFERENCES jobs(job_id)); 
 
