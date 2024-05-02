@@ -1,4 +1,4 @@
---  Order managment system
+--  Order management system
 
     -- Creating database
         create database order_mngmt_system;
